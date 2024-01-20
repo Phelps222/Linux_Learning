@@ -1,0 +1,17 @@
+echo "Criação de vários usuários com parâmetros do bash (-s /bin/bash), diretório de usuário (-m), senha com expiração (-p $(openssl passwd senha123))
+descrição do usuário (-c "usuário tal")"
+
+
+useradd Guest10 -c "Server User 10" -s /bin/bash -m -p $(openssl passwd senha123)
+passwd Guest10 -e
+
+
+useradd Guest11 -c "Server User 11" -s /bin/bash -m -p $(openssl passwd senha123)
+passwd Guest11 -e
+
+useradd Guest12 -c "Server User 12" -s /bin/bash -m -p $(openssl passwd senha123)
+passwd Guest12 -e
+
+useradd Guest13 -c "Server User 13" -s /bin/bash -m -p $(openssl passwd senha123)
+passwd Guest13 -e
+
